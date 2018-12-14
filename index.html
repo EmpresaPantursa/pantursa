@@ -1,0 +1,829 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>.::Pantursa::.</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		<!---- start-smoth-scrolling---->
+		 <!-- Custom Theme files -->
+		<link href="css/theme-style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<!----webfonts---->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<!----//webfonts---->
+		<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+</head>
+	<body>
+		<!-----start-container----->
+			<!----- start-header---->
+			<div id="home" class="header">
+				<div class="container">
+					<div class="logo">
+						<a href="#"><img src="images/logo.jpg" title="logo" /></a>
+					</div>
+					<!----start-top-nav---->
+					 <nav class="top-nav">
+						<ul class="top-nav">
+							<li class="active"><a href="#home" class="scroll">Inicio <span> </span></a></li>
+							<li class="page-scroll"><a href="#ser" class="scroll">Servicios <span> </span></a></li>
+							<li class="page-scroll"><a href="#about" class="scroll">Quienes Somos <span> </span></a></li>
+							<li class="page-scroll"><a href="#port" class="scroll">Portfolio <span> </span></a></li>
+							<li class="page-scroll"><a href="#team" class="scroll">Oficinas<span> </span></a></li>
+							<li class="contatct-active" class="page-scroll"><a href="#contact" class="scroll">Contáctenos </a></li>
+							
+						</ul>
+						<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+					</nav>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<!----- //End-header---->
+			<!----- start-slider---->
+			<!----start-slider-script---->
+			<script src="js/responsiveslides.min.js"></script>
+			 <script>
+			    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 4
+			      $("#slider4").responsiveSlides({
+			        auto: true,
+			        pager: true,
+			        nav: true,
+			        speed: 500,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+			
+			    });
+			  </script>
+			<!----//End-slider-script---->
+			<!-- Slideshow 4 -->
+			    <div  id="top" class="callbacks_container">
+			      <ul class="rslides" id="slider4">
+			        <li>
+			          <img src="images/slide.png" alt="">
+			          <div class="caption text-center">
+			          	<div class="slide-text-info">
+			          		
+			          		<h1>Somos una <span>Empresa</span> <span>líder</span> en Turismo, Envío de Encomiendas</h1>
+			          	
+			          	</div>
+			          </div>
+			        </li>
+			        <li>
+			          <img src="images/slide.png" alt="">
+			          <div class="caption text-center">
+			          	<div class="slide-text-info">
+			          		
+			          		<h1> y Transporte de pasajeros<span> Viru-Trujilo-Chao </span> en la región de <span>La Libertad</span></h1>
+			          		
+			          	</div>
+			          </div>
+			        </li>
+			       
+			      </ul>
+			    </div>
+			    <div class="clearfix"> </div>
+			<!----- //End-slider---->
+			<!----start-services---->
+			<div id="ser" class="services">
+				<div class="container">
+					<div class="services-head text-center">
+						<h3>Nuestros Servicios</h3>
+						
+					</div>
+					<!-----start-services-grids---->
+					<div class="services-grids">
+						<div class="col-md-4 services-grid">
+							<div class="col-md-3 services-grid-left">
+								<a class="top-icon1" href="#"><span> </span></a>
+							</div>
+							<div class="col-md-9 services-grid-right">
+								<h4><a href="#">Envío de Encomiendas</a></h4>
+								<p size="11"> Envíos a las ciudades de Viru-Trujillo-Chao</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="col-md-4 services-grid">
+							<div class="col-md-3 services-grid-left">
+								<a class="top-icon1" href="#"><span> </span></a>
+							</div>
+							<div class="col-md-9 services-grid-right">
+								<h4><a href="#">Seguir Encomiendas</a></h4>
+								<p size="11"> Envíos a las ciudades de Viru-Trujillo-Chao</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="col-md-4 services-grid">
+							<div class="col-md-3 services-grid-left">
+								<a class="top-icon2" href="#"><span> </span></a>
+							</div>
+							<div class="col-md-9 services-grid-right">
+								<h4><a href="#">Transporte de Pasajeros</a></h4>
+								<p>El servicio esta disponible para las ciudades de Viru-Trujillo-Chao</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="col-md-4 services-grid">
+							<div class="col-md-3 services-grid-left">
+								<a class="top-icon3" href="#"><span> </span></a>
+							</div>
+							<div class="col-md-9 services-grid-right">
+								<h4><a href="#portfoliolist">Turismo</a></h4>
+								<p>El servicio Turístico esta disponible para todo el Perú</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						
+						
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+			<!----//End-services---->
+					<!-----//End-services-grids---->
+					<!---- start-about----->
+					<div id="about" class="about">
+						<div class="container">
+							<div id="about" class="about">
+        <div class="container">
+            <div class="about-head">
+                <h4>Sobre Nosotros</h4>
+              
+                <p>"Somos una empresa dedicada al Envio de Encomiendas
+            y al transporte de pasajeros, estamos ubicados en
+            la ciudad de TRUJILLO."</p>
+            </div>
+            <!----- start-about-grids----->
+            <div class="about-grids">
+                <div class="col-md-7 about-grid-left">
+                    <span> </span>
+                </div>
+                <div class="col-md-5 about-grid-right">
+                    <h5>MISIÓN:</h5>
+                    <p style="justify-content:center">Ser líderes en el servicio de envió de encomiendas
+                         y de transporte nacional e internacional de pasajeros,
+                         ofreciendo un servicio de calidad a nuestros clientes,
+                         una fuente de trabajo estable para nuestros empleados,
+                         rendimientos atractivos para los accionistas y beneficio
+                          para la comunidad a la que pertenecemos; basado en la
+                          eficiencia y enmarcado en un ambiente de seguridad total.</p>
+                    <h6>VISIÓN:</h6>
+                    <p style="justify-content:center">
+                        Es ser una empresa en constante crecimiento capaz
+                        de mantenerse en el tiempo confiable y seguro
+                        brindando la más alta calidad en los servicios
+                        brindados a los clientes en la ciudad de Trujillo,
+                        siendo reconocida a nivel nacional como una
+                        organización confiable y segura.
+                    </p>
+
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+								<!----- //End-about-grids----->
+							</div>
+						</div>
+		</div>
+	</div>¿
+		<!---- //End-about----->
+		<!-----start-portfolio---->
+		<div id="port" class="portfolio-box-main">
+			<div class="container">
+				<div class="portfolio-head text-center">
+					<h3>Promociones y Turismo</h3>
+				</div>
+			</div>
+			<!----start-portfolio----->
+		<div class="portfolio portfolio-box">
+			<!----start-portfolio---->
+         <div  class="portfolio-main">
+	        	<!---- start-portfolio-script----->
+					<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+					<script type="text/javascript">
+						$(function () {
+							var filterList = {
+								init: function () {
+								
+									// MixItUp plugin
+									// http://mixitup.io
+									$('#portfoliolist').mixitup({
+										targetSelector: '.portfolio',
+										filterSelector: '.filter',
+										effects: ['fade'],
+										easing: 'snap',
+										// call the hover effect
+										onMixEnd: filterList.hoverEffect()
+									});				
+								
+								},
+								hoverEffect: function () {
+									// Simple parallax effect
+									$('#portfoliolist .portfolio').hover(
+										function () {
+											$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+											$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+										},
+										function () {
+											$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+											$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+										}		
+									);				
+								
+								}
+					
+							};
+							// Run the show!
+							filterList.init();
+						});	
+					</script>
+					<!----//End-portfolio-script----->
+					<ul id="filters" class="clearfix">
+						
+						<li><span class="filter " data-filter="app">Promociones</span> |</li>
+						<li><span class="filter active" data-filter="card">Excursiones</span> |</li>
+						<li><span class="filter" data-filter="icon">Turismo</span> |</li>
+						
+					</ul>
+					<div id="portfoliolist">
+							
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p3.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>Plaza de Trujillo</h3>
+						     				<span>Es la plaza donde se realizó la fundación española de la ciudad de Trujillo, en la costa norte peruana.</span>
+						     			</div>
+						     			<div class="animate-head-right">
+						     				<span><i class="fa fa-search-plus"> </i></span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>		
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p5.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>Punta Sal</h3>
+						     				<span>ubicado al norte del Perú donde podrás disfrutar de la tranquilidad y exclusividad de tu propio espacio en una paradisíaca playa.</span>
+						     			</div>
+						     			<div class="animate-head-right">
+						     				<span><i class="fa fa-search-plus"> </i></span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>		
+					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p1.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>Machu Picchu</h3>
+						     				<span>Es una de las maravillas del mundo que le pertenece al Peru y esta ubicado en la ciudad del Cuzco. </span>
+						     			</div>
+						     			<div class="animate-head-right">
+						     				<span><i class="fa fa-search-plus"> </i></span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>				
+					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p4.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>Catarata Condornada</h3>
+						     				<span>unos de los sitios turisticos a visitar en la ciudad de Viru </span>
+						     			</div>
+						     			<div class="animate-head-right">
+						     				<span><i class="fa fa-search-plus"> </i></span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>	
+					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p8.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>Machu Picchu</h3>
+						     				<span>Es una de las maravillas del mundo que le pertenece al Peru y esta ubicado en la ciudad del Cuzco.</span>
+						     			</div>
+						     			<div class="animate-head-right">
+						     				<span><i class="fa fa-search-plus"> </i></span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>	
+					
+					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p14.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>Castillo de Tomabal</h3>
+						     				<span>sitio arqueológico inportante para la cultura Viru-Gallinazo ubicado en el distrito y provincia de Virú </span>
+						     			</div>
+						     			<div class="animate-head-right">
+						     				<span><i class="fa fa-search-plus"> </i></span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>	
+					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p15.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>Machu Picchu</h3>
+						     				<span>Es una de las maravillas del mundo que le pertenece al Peru y esta ubicado en la ciudad del Cuzco.</span>
+						     			</div>
+						     			<div class="animate-head-right">
+						     				<span><i class="fa fa-search-plus"> </i></span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>	
+					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p16.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>Chan Chan Trujillo</h3>
+						     				<span>La ciudad de adobe más grande en el mundo ubicada en la ciudad de Trujillo.</span>
+						     			</div>
+						     			<div class="animate-head-right">
+						     				<span><i class="fa fa-search-plus"> </i></span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>	
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p6.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>Chan Chan Trujillo</h3>
+						     				<span>una de las pinturas plasmadas en las paredes de la ciudad de Chan Chan Trujillo.</span>
+						     			</div>
+						     			<div class="animate-head-right">
+						     				<span><i class="fa fa-search-plus"> </i></span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>			
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p9.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>Huacachina-Ica</h3>
+						     				<span>oasis desértico y una pequeña villa justo al oeste de la ciudad de Ica-Perú, tiene una laguna la cual se cree que tiene propiedades terapéuticas y está rodeada de palmas.</span>
+						     			</div>
+						     			<div class="animate-head-right">
+						     				<span><i class="fa fa-search-plus"> </i></span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>			
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p10.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>Ciudadela Chan Chan</h3>
+						     				<span >La ciudad de adobe más grande en el mundo ubicada en la ciudad de Trujillo.</span>
+						     			</div>
+						     			<div class="animate-head-right">
+						     				<span><i class="fa fa-search-plus"> </i></span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>		
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p11.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>Pacasmayo</h3>
+						     				<span>Este pueblo tiene ese mágico y decadente encanto de la soledad. Con casonas que datan del siglo XIX, construcciones de madera colorida que nos llevan a un tiempo de bonanza un siglo atrás.</span>
+						     			</div>
+						     			<div class="animate-head-right">
+						     				<span><i class="fa fa-search-plus"> </i></span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>		
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p12.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>Playa Puerto Morin</h3>
+						     				<span>Esta playa presenta una geografía totalmente particular debido a que se encuentra protegida por el Cerro Negro. Justamente es esta colina la que sirve como rompeolas, permitiendo que sus aguas sean calmadas.</span>
+						     			</div>
+						     			<div class="animate-head-right">
+						     				<span><i class="fa fa-search-plus"> </i></span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>		
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p13.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>Playa Huanchaco</h3>
+						     				<span>Es el balneario más importante de Trujillo, representativo por encontrar decenas de caballitos de totora en sus orillas, utilizados para realizar paseos a los visitantes.</span>
+						     			</div>
+						     			<div class="animate-head-right">
+						     				<span><i class="fa fa-search-plus"> </i></span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>		
+					
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p7.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>Playa Los Organos</h3>
+						     				<span>La particularidad de la Playa Los Órganos recae en sus cristalinas y cálidas aguas de color turquesa, cuyas olas hacen propicia la práctica de deportes acuáticos como el nado, el kayak, el surf, el windsurfing y la pesca</span>
+						     			</div>
+						     			<div class="animate-head-right">
+						     				<span><i class="fa fa-search-plus"> </i></span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>	
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p17.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>Huaraz</h3>
+						     				<span>ciudad del valle Callejón de Huaylas en el Perú, se ubica a más de 3,000 metros sobre el nivel del mar, con cimas nevadas de la Cordillera Blanca.</span>
+						     			</div>
+						     			<div class="animate-head-right">
+						     				<span><i class="fa fa-search-plus"> </i></span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>	
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p18.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>Cajamarca</h3>
+						     				<span> es una ciudad del área montañosa del norte de Perú, en la cordillera de los Andes. La plaza principal histórica, la Plaza de Armas, está rodeada de arquitectura colonial barroca.</span>
+						     			</div>
+						     			<div class="animate-head-right">
+						     				<span><i class="fa fa-search-plus"> </i></span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>	
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p19.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>Cuzco</h3>
+						     				<span>ciudad de los Andes peruanos que fue la capital del Imperio Inca y es conocida por sus restos arqueológicos y la arquitectura colonial española. </span>
+						     			</div>
+						     			<div class="animate-head-right">
+						     				<span><i class="fa fa-search-plus"> </i></span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>	
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p20.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>Máncora</h3>
+						     				<span>es una ciudad turística en la región Piura, en la costa noroeste de Perú. Es conocida por su playa de arena Máncora, cuyas grandes olas atraen a los surfistas.</span>
+						     			</div>
+						     			<div class="animate-head-right">
+						     				<span><i class="fa fa-search-plus"> </i></span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>	
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p21.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>Catarata Condornada</h3>
+						     				<span> Se conoce con el nombre de catarata Condornada, a un par de caídas de agua de 4 y 6 metros que parecen surgir de las paredes rocosas hacia una piscina natural. El nombre que presenta esta cascada, deviene de las formaciones rocosas que presenta a su alrededor, y en las que se parece ver reproducida la figura de un cóndor.</span>
+						     			</div>
+						     			<div class="animate-head-right">
+						     				<span><i class="fa fa-search-plus"> </i></span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>	
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p22.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>Ica-Huacachina</h3>
+						     				<span>oasis desértico y una pequeña villa justo al oeste de la ciudad de Ica-Perú, tiene una laguna la cual se cree que tiene propiedades terapéuticas y está rodeada de palmas.</span>
+						     			</div>
+						     			<div class="animate-head-right">
+						     				<span><i class="fa fa-search-plus"> </i></span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>	
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="images/p23.jpg" /><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>Huanchaco</h3>
+						     				<span>Es el balneario más importante de Trujillo, representativo por encontrar decenas de caballitos de totora en sus orillas, utilizados para realizar paseos a los visitantes.</span>
+						     			</div>
+						     			<div class="animate-head-right">
+						     				<span><i class="fa fa-search-plus"> </i></span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>	
+					<div class="clearfix"> </div>	
+					<a class="more-ports text-center" href="#"><span> </span></a>																																				
+				</div>
+		</div>
+		</div>
+		<div class="clearfix"> </div>
+		</div>
+         <!----//End-portfolio---->
+         <!----start-team----->
+         <div id="team" class="team">
+         	<div class="container">
+         		<div class="team-head text-center">
+         			<h3>Nuestras Oficinas</h3>
+         			<p></p>
+         		</div>
+         		<div class="team-members-grids text-center">
+         			<div class="col-md-4 team-member-grid">
+         				
+         				<h5><a href="#">Viru</a></h5>
+         				<p>"Terminal de Viru oficina N°1"</p>
+         				<ul class="list-unstyled list-inline">
+         					<li><a href="#"><i class="fa fa-facebook"> </i></a></li>
+         					<li><a href="#"><i class="fa fa-twitter"> </i></a></li>
+         					<li><a href="#"><i class="fa fa-skype"> </i></a></li>
+         				</ul>
+         			</div>
+         			<div class="col-md-4 team-member-grid">
+         				<h5><a href="#">Trujillo</a></h5>
+         				
+         				<p>"Terminal Santa Cruz ofinica N°3"</p>
+         				<ul class="list-unstyled list-inline">
+         					<li><a href="#"><i class="fa fa-facebook"> </i></a></li>
+         					<li><a href="#"><i class="fa fa-twitter"> </i></a></li>
+         					<li><a href="#"><i class="fa fa-skype"> </i></a></li>
+         				</ul>
+         			</div>
+         			<div class="col-md-4 team-member-grid">
+         				
+         				<h5><a href="#">Chao</a></h5>
+         				
+         				<p>"Terminal de Chao oficina N°1"</p>
+         				<ul class="list-unstyled list-inline">
+         					<li><a href="#"><i class="fa fa-facebook"> </i></a></li>
+         					<li><a href="#"><i class="fa fa-twitter"> </i></a></li>
+         					<li><a href="#"><i class="fa fa-skype"> </i></a></li>
+         				</ul>
+         			</div>
+         			<div class="clearfix"> </div>
+         		</div>
+         	</div>
+         </div>
+         <!----//End-team----->
+         <!----start-contact---->
+         <div id="contact" class="contact">
+         	<div class="container">
+         		<div class="contact-head text-center">
+         			<h3>Contáctenos</h3>
+         			<span>Nos Puede Contactar en los diferentes terminales de Pantursa</span>
+         			<p></p>
+         		</div>
+         			<div class="col-md-4 contact-right">
+         				<h4>Terminal Viru</h4><br />
+         				<p><span class="icon2"> </span><a href="#">infoViru@gmail.com</a></p><br />
+         				<p><span class="icon1"> </span>949143068</p><br />
+         				<p><span class="icon3"> </span><label>Office no 1</label></p><br />
+         				
+         			</div>
+         			<div class="col-md-4 contact-right">
+         				<h4>Terminal Trujillo</h4><br />
+         				<p><span class="icon2"> </span><a href="#">infoTrujillo@gmail.com</a></p><br />
+         				<p><span class="icon1"> </span>986468332</p><br />
+         				<p><span class="icon3"> </span><label>Office no 3</label></p><br />
+         				
+         			</div>
+         			<div class="col-md-4 contact-right">
+         				<h4>Terminal Chao</h4><br />
+         				<p><span class="icon2"> </span><a href="#">infoChao@gamil.com</a></p><br />
+         				<p><span class="icon1"> </span>959439993</p><br />
+         				<p><span class="icon3"> </span><label>Office no 1</label></p><br />
+         				         			</div>
+         			<div class="clearfix"> </div>
+         		</div>
+         	</div>
+         </div>
+         <!----//End-contact---->
+         
+         
+			<!----//End-services---->
+         <!-----start-footer---->
+         <div class="footer">
+         	<div class="container">
+         		<div class="footer-right">
+         			<p>Copyright &copy; <h7>
+                    <script>document.write(new Date().getFullYear());</script>
+                </h7>Todos los derechos reservados por <a href="http://w3layouts.com/">www.pantursa.com</a></p>
+         			<script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+         		</div>
+         		
+         		<div class="clearfix"> </div>
+         	</div>
+         </div>
+         <!-----//End-footer---->
+		<!-----//End-container----->
+	</body>
+</html>
+
